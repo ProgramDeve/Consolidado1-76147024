@@ -24,7 +24,7 @@ class CuentaBancaria:
 
 
 class CuentaAhorros(CuentaBancaria):
-    def __init__(self, numero_cuenta, titular, saldo=0.0, tasa_interes=4.5):
+    def __init__(self, numero_cuenta, titular, saldo=0.0, tasa_interes=4.0):
         super().__init__(numero_cuenta, titular, saldo)
         self.tasa_interes = tasa_interes
 
@@ -55,7 +55,7 @@ class CuentaCorriente(CuentaBancaria):
 
 
 if __name__ == "__main__":
-    ahorros = CuentaAhorros("AH-001", "Jorge Alvaro", 1000.0, 4.5)
+    ahorros = CuentaAhorros("AH-001", "Jorge Alvaro", 1000.0, 4.0)
     ahorros.depositar(500)
     ahorros.retirar(200)
     print(ahorros)
