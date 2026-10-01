@@ -36,7 +36,7 @@ class CuentaAhorros(CuentaBancaria):
 
 
 class CuentaCorriente(CuentaBancaria):
-    def __init__(self, numero_cuenta, titular, saldo=0.0, limite_sobregiro=500.0):
+    def __init__(self, numero_cuenta, titular, saldo=0.0, limite_sobregiro=600.0):
         super().__init__(numero_cuenta, titular, saldo)
         self.limite_sobregiro = limite_sobregiro
 
