@@ -54,3 +54,9 @@ if __name__ == "__main__":
         auto.año_fabricacion = 1800
     except ValueError as e:
         print(f"Error capturado: {e}")
+
+# Prueba adicional de validación
+try:
+    auto.nivel_combustible = 150
+except ValueError as e:
+    print(f"Error capturado: {e}")
