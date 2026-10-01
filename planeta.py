@@ -28,3 +28,7 @@ if __name__ == "__main__":
 
     print(tierra)
     print(jupiter)
+
+    # Prueba adicional de instancia
+marte = Planeta("Marte", 6.39e23, 3.3895e6, 1.52, False)
+print(marte)
